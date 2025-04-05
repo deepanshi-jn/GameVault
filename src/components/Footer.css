@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.footer {
+    background-color: #152139;
+    color: #ccc;
+    padding: 40px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.footer h5 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-main {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #fff;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.subscribe-form input {
+    background-color: #1b2330;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    flex: 1;
+    min-width: 180px;
+}
+
+.subscribe-form button {
+    background-color: #635bff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.subscribe-form button:hover{
+    background-color: #544fb3;
+}
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-top {
+    padding-bottom: 30px;
+}
+
+.footer-payment-icons {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .footer-top {
+        text-align: center;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .footer-payment-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .subscribe-form {
+        justify-content: center;
+    }
+
+    .footer-bottom p {
+        text-align: center;
+    }
+}
+
+/* For mobile screens below 450px */
+@media (max-width: 450px) {
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .footer-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links ul li {
+        font-size: 13px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 11px;
+        padding-top: 15px;
+    }
+}
+
+/* Specific tweaks for very narrow screens below 410px */
+@media (max-width: 410px) {
+
+    .subscribe-form input,
+    .subscribe-form button {
+        max-width: 100%;
+    }
+
+    .footer-icons {
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer h5 {
+        font-size: 15px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 10.5px;
+    }
+
+    .footer-links ul li {
+        font-size: 12px;
+    }
+}
+
+/* Handle all small devices with screen width 410px and below */
+@media (max-width: 410px) {
+    .footer {
+        padding: 25px 10px;
+        font-size: 13px;
+    }
+
+    .footer-title,
+    .footer-main {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .footer h5 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-links ul li {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        padding-left: 0;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 90%;
+        max-width: 280px;
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 17px;
+        margin-top: 15px;
+    }
+
+    .footer-payment-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 11px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .footer-top {
+        text-align: center;
+    }
+}

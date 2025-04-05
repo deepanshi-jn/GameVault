@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+.sidebar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    font-family: 'Inter', sans-serif !important;
+    width: 230px;
+    margin-left:80px ;
+    margin-top: 10px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 1rem; */
+    /* border-bottom: 1px solid #eee; */
+}
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.clear-all {
+    font-size: 16px;
+    color: #6c63ff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clear-all:hover {
+    color: #5548d9;
+}
+.filter-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #646060;
+    /* Darker text */
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Checkbox Labels (Action, Adventure, etc.) */
+.filter-checkbox .form-check-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #727171;
+    font-family: 'Inter', sans-serif !important;
+    /* Slightly lighter than headings */
+}
+
+/* Style for checkboxes */
+.filter-checkbox .form-check-input {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Style when checkbox is checked */
+.filter-checkbox .form-check-input:checked {
+    background-color: #6c63ff;
+    /* Matches theme */
+    border-color: #6c63ff;
+}
+
+/* Hover effect for better UX */
+.filter-checkbox:hover .form-check-label {
+    color: #383737;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.slider {
+    width: 100%;
+    appearance: none;
+    height: 6px;
+    background: #8580df;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-value {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.filter-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-radio {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6c6666;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.filter-radio input {
+    margin-right: 8px;
+    accent-color: #6c63ff;
+    /* Change radio button color */
+}
+
+.apply-filters-btn {
+    background-color: #6c63ff !important;
+    /* Custom background color */
+    color: white !important;
+    /* Change text color */
+    font-size: 16px !important;
+    font-weight:600 !important;
+    border-radius: 8px !important;
+    width: 200px !important;
+    height: 45px !important;
+    border: none !important;
+    margin-top: 20px;
+}
+
+.apply-filters-btn:hover {
+    background-color: #5548d9 !important;
+    /* Darker color on hover */
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 16px;
+    }
+
+    .apply-filters-btn {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        padding: 14px;
+    }
+
+    .sidebar-title {
+        font-size: 16px;
+    }
+
+    .clear-all {
+        font-size: 14px;
+    }
+
+    .filter-label {
+        font-size: 14px;
+    }
+
+    .filter-checkbox .form-check-label,
+    .filter-radio {
+        font-size: 13px;
+    }
+
+    .slider-value {
+        font-size: 13px;
+    }
+
+    .apply-filters-btn {
+        height: 42px !important;
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .filters-sidebar {
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+        background-color: white;
+        z-index: 1000;
+        height: 100vh;
+    }
+
+    .filters-sidebar.active {
+        left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .filters-sidebar {
+        display: none;
+    }
+}

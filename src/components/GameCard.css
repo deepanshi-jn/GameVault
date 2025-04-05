@@ -1,0 +1,319 @@
+.game-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.game-card {
+    width: 300px;
+    height: 420px;
+    border-radius: 16px !important;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    background: #fff;
+    border: none !important;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-image-container {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bookmark-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none !important;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px;
+    border-radius: 80% !important;
+    font-size: 18px !important;
+}
+
+.bookmark-button.bookmarked {
+    background: gold;
+    color: white;
+}
+
+.game-card-body {
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+}
+
+.title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333 ;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFA500;
+}
+
+.star-icon {
+    margin-right: 4px;
+}
+
+.game-genres {
+    margin: 8px 0;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.genre-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    background: #F3F4F6;
+    color: #333;
+    border-radius: 8px;
+}
+
+.game-description {
+    font-size: 14px;
+    color: #666;
+    margin: 8px 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.release-year {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.view-details-btn {
+    width: 100%;
+    background-color: #6A5ACD !important;
+    border: none !important;
+    font-weight: bold;
+    padding: 8px !important;
+    border-radius: 8px !important;
+}
+
+.view-details-btn:hover {
+    background-color: #5A4ECD !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .game-card {
+        width: 280px;
+        height: 400px;
+    }
+    
+    .game-image-container {
+        height: 150px;
+    }
+    
+    .game-card-body {
+        height: 230px;
+    }
+}
+
+@media (max-width: 992px) {
+    .game-card {
+        width: 260px;
+        height: 380px;
+    }
+    
+    .game-image-container {
+        height: 140px;
+    }
+    
+    .game-card-body {
+        height: 220px;
+        padding: 14px;
+    }
+    
+    .game-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-card {
+        width: 240px;
+        height: 360px;
+    }
+    
+    .game-image-container {
+        height: 130px;
+    }
+    
+    .game-card-body {
+        height: 210px;
+        padding: 12px;
+    }
+    
+    .game-title {
+        font-size: 15px;
+    }
+    
+    .game-description {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 340px;
+    }
+    
+    .game-image-container {
+        height: 160px;
+    }
+    
+    .game-card-body {
+        height: auto;
+        min-height: 180px;
+    }
+    
+    .game-title {
+        font-size: 16px;
+    }
+    
+    .game-description {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
+    
+    .genre-badge {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 410px) {
+    .game-card {
+        width: 100%;
+        max-width: 280px;
+        min-height: 320px;
+    }
+    
+    .game-image-container {
+        height: 140px;
+    }
+    
+    .game-card-body {
+        padding: 10px;
+        min-height: 170px;
+    }
+    
+    .game-title {
+        font-size: 15px;
+    }
+    
+    .game-description {
+        font-size: 12px;
+        -webkit-line-clamp: 2;
+    }
+    
+    .genre-badge {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+    
+    .view-details-btn {
+        padding: 6px !important;
+        font-size: 14px;
+    }
+}   
+
+/* Make cards more flexible inside flex/grid containers */
+.game-card-link {
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+
+/* Ensure game-card behaves well in wrapping layouts */
+.game-card {
+    flex: 1 1 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Use modern fluid units for widths in media queries */
+@media (max-width: 768px) {
+    .game-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1239px) and (min-width: 771px) {
+    .game-card {
+        width: 260px;
+        height: 380px;
+    }
+
+    .game-image-container {
+        height: 140px;
+    }
+
+    .game-card-body {
+        height: 220px;
+        padding: 14px;
+    }
+
+    .game-title {
+        font-size: 16px;
+    }
+
+    .genre-badge {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+
+    .view-details-btn {
+        font-size: 14px;
+        padding: 7px !important;
+    }
+}
+

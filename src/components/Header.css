@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Navbar Styles */
+.header {
+    position: sticky !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    height: 60px;
+}
+
+.brand {
+    margin-right: 1rem;
+}
+
+.game-vault-text {
+    font-family: 'Pacifico', cursive;
+    color: #6c5ce7;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Search Bar */
+.search-wrapper {
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type='search'] {
+    border-radius: 50px;
+    border: none;
+    background-color: #6c757d !important;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    color: white;
+    outline: none;
+}
+
+input[type='search']::placeholder {
+    color: #ddd;
+}
+
+/* Bookmark Icon */
+.bookmark-link {
+    margin-right: 1rem;
+    padding: 0;
+}
+
+.bookmark-icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+.bookmark-icon-circle:hover {
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    background-color: #6c5ce7e1 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1.3rem !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: white;
+    transition: all 0.2s ease;
+    outline: #6c5ce7 !important;
+}
+
+.sign-in-btn:hover {
+    background-color: #5d4fd1 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Sidebar Styles */
+.custom-sidebar {
+    width: 280px !important;
+    padding-top: 1rem;
+    background-color: white !important;
+}
+
+/* Sidebar Header (Title + Close Button) */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 1rem; */
+    /* border-bottom: 1px solid #eee; */
+}
+
+/* Sidebar Body */
+.sidebar-body {
+    padding: 1rem;
+}
+
+/* Close Button */
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.75rem;
+    color: #6c5ce7;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #341f97;
+}
+
+/* Sidebar: search bar stays at top */
+.sidebar-body .search-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+/* Sidebar: options in one horizontal line */
+.sidebar-body .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+/* Remove margin/padding from nav children for tighter layout */
+.sidebar-body .nav .nav-link,
+.sidebar-body .sign-in-btn,
+.sidebar-body .cl-userButton-root {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+

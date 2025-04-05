@@ -1,0 +1,93 @@
+.hero-section {
+    position: relative !important;
+    background-image: url('../assets/hero.png') !important;
+    background-color: aqua;
+    background-size: cover !important;
+    background-position: center;
+    color: white;
+    padding: 60px 30px !important;
+    border-radius: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    height: 310px;
+
+    /* Make it fully stretch inside .content-col */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.explore-button {
+    background-color: #6153c9 !important;
+    border: none !important;
+    font-size: 1.1rem;
+    padding: 10px 20px !important;
+}
+
+.explore-button:hover {
+    background-color: #5a4dbc !important;
+}
+
+/* Medium screen adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 40px 20px !important;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        font-size: 1rem;
+        padding: 8px 16px !important;
+    }
+}
+
+/* Small screen tweaks */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .explore-button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* Hide HeroSection on small devices */
+@media (max-width: 500px) {
+    .hero-section {
+        display: none;
+    }
+}
