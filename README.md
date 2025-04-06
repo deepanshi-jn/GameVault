@@ -1,61 +1,87 @@
-# Game Library App - RAWG API Integration
+# 🎮 GameVault
 
-This project is a responsive front-end website that fetches and displays game data using the RAWG API.
+GameVault is a fully responsive, modern web application built with React that lets users explore and discover a vast collection of video games  GameVault provides game listings with search, filters, pagination, detailed pages, user authentication, and bookmarking capabilities.
 
-## Technologies Used
+Live Link: https://gamevault-0f8m.onrender.com <!-- Optional: Replace with your own banner -->
 
-- React (with Vite)
-- React-Bootstrap & Bootstrap
-- Redux (with Redux Toolkit)
-- Clerk Auth
-- React Router
-- Axios
+---
 
-## Project Setup
+## 🚀 Features
 
-### Prerequisites
+- 🔍 **Search & Filter** games by name, genre, platform, and more
+- 📃 **Paginated** game listings for smooth navigation
+- 🎮 **Game Details Page** with screenshots, descriptions, release dates, ratings, and platforms
+- ❤️ **Bookmarking System** – Save your favorite games to your profile
+- 🔐 **User Authentication** using [Clerk](https://clerk.dev)
+- 📱 **Fully Responsive Design** across all screen sizes
+- ⚛️ State management with **Redux Toolkit**
 
-- Node.js (version 16 or later)
-- NPM or Yarn
-- RAWG API key (get one at https://rawg.io/apidocs)
-- Clerk account and publishable key (https://clerk.dev)
+---
 
-### Installation
+## 🛠️ Tech Stack
 
-1. Clone the repository
+- **Frontend:** React, React-Bootstrap, Bootstrap, Vanilla CSS
+- **Authentication:** Clerk
+- **State Management:** Redux Toolkit
+- **API:** [RAWG Video Games Database](https://rawg.io/apidocs)
+
+---
+
+
+## 🔧 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+    git clone https://github.com/deepanshi-jn/GameVault.git
+    cd GameVault
+   ```
+
+2. **Install dependencies**
+  ```bash
+   npm install
+  ```
+
+3. **Create a .env file and add your Clerk and RAWG API keys:**
+```bash
+   VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+   VITE_RAWG_API_KEY=your_rawg_key
 ```
-git clone https://github.com/yourusername/rawg-game-library.git
-cd rawg-game-library
+
+4. **Run the app**
+```bash
+   npm run dev
 ```
 
-2. Install dependencies
-```
-npm install
-```
 
-3. Create a `.env` file in the root directory with the following variables:
-```
-VITE_RAWG_API_KEY=your_rawg_api_key_here
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-```
+📂 Folder Structure
 
-4. Start the development server
-```
-npm run dev
-```
+src/
+├── components/
+├── pages/
+├── redux/
+├── services/
+├── styles/
+├── App.jsx
+├── main.jsx
+└── ...
 
-## Features
+🙌 Acknowledgements:
 
-- Browse games with filtering options (categories, tags, release year, popularity)
-- Search functionality
-- Detailed game pages with screenshots, description, and system requirements
-- User authentication with Clerk
-- Bookmarking system for saving favorite games
-- Responsive design for all device sizes
+RAWG API
 
-## Project Structure
+Clerk
 
-- `src/components`: Reusable UI components
-- `src/pages`: Page components
-- `src/redux`: Redux store and slices
-- `src/services`: API service layer
+React-Bootstrap
+
+Redux Toolkit
+
+📬 Contact
+Have feedback or want to contribute? Feel free to reach out!
+
+💼 GitHub: deepanshi-jn,
+
+📧 Email: deepanshijain1211@gmail.com
+
+
+🎮 GameVault
+Your go-to platform for exploring, managing, and discussing the best games out there.
